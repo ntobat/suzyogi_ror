@@ -1,0 +1,293 @@
+/* ----------  ---------- */
+
+/* ---------- Body ---------- */
+
+body{
+	overflow-x: hidden;
+}
+body, .jumbotron{
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Julius Sans One', 'Open Sans', sans-serif;
+}
+
+.link{
+	text-decoration: none;
+	color: #32B9ED;
+}
+
+#overlay{
+	position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    top: 0px; 
+    left: 0px; 
+    opacity: 0.9;
+    filter: alpha(opacity = 90) !important;
+    display: none;
+    z-index: 10;
+    background: -webkit-linear-gradient(left top, #EB0080 , #0579D9); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #EB0080 , #0579D9); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #EB0080 , #0579D9); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #EB0080 , #0579D9); /* Standard syntax */
+}
+
+/* ---------- Jumbotron ---------- */
+
+.jumbotron{
+	background-image: url('http://i.imgur.com/vrIn63h.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: none;
+	border-radius: 5px;
+	height: 800px;
+	z-index: 1;
+	position: relative;
+	text-align: center;
+}
+.jumbotron a, .jumbotron a:hover{
+	text-decoration: none;
+	color: black;
+}
+#menu{
+	position: absolute;
+	width: 320px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	top: 5.5em;
+	background-color: rgba(180, 180, 180, 0.25);
+	box-shadow: 0px 2px 2px #910818;
+	border-radius: 5px;
+	z-index: 2;
+}
+#name a{
+	font-size: 1.75em;
+}
+.nav{
+	padding: 10px;
+}
+.nav:hover{
+	box-shadow: 0px 2px 2px #910818;
+}
+
+
+/* ---------- Scrollmenu ---------- */
+
+#scrollmenu{
+	display: none;
+	position: fixed;
+	right: 15px;
+	z-index: 20;
+}
+#icon{
+	height: auto;
+	width: 40px;
+}
+
+.slide-menu{
+	width: 240px;
+	height: 300px;
+	display: none;
+	position: fixed;
+	right: -60px;
+	background-color: rgba(200, 200, 200, 0.75);
+	box-shadow: 0px 2px 2px #910818;
+	z-index: 9999;
+}
+.slide-menu ul{
+	list-style: none;
+}
+.close-menu{
+	font-family: 'Julius Sans One', 'Open Sans', sans-serif;
+	padding: 5px;
+	box-shadow: 0px 2px 2px #910818;
+	cursor: pointer;
+	font-size: 1em;
+}
+.slide-nav{
+	padding: 10px;
+}
+.slide-nav:hover{
+	box-shadow: 0px 2px 2px #910818;
+}
+.slide-menu a{
+	text-decoration: none;
+	color: black;
+}
+.slid-out{
+}
+
+
+/* ---------- About ---------- */
+
+#about-block{
+	position: relative;
+	/*background-color: #AC4EE0;*/
+	border-radius: 5px;
+	overflow: auto;
+	height: 480px;
+	margin-top: .5em;
+}
+#about-title{
+	position: relative;
+	top: 0.5em;
+	width: 90%;
+	border: none;
+	border-radius: 5px;
+	z-index: 1;
+	margin: 0 0 0 1em;
+	padding-left: 1em;
+	background-color: #7663A3;
+}
+#about-title h1{
+	font-size: 5em;
+	z-index: 1;
+	color: white;
+	margin: 0;
+}
+#about-text{
+	width: 680px;
+	z-index: 10;
+	padding: 1em 0 1em 1.5em;
+	float: left;
+	font-family: 'Merriweather', serif;
+	text-transform: none;
+}
+#about-img{
+	height: auto;
+	width: 320px;
+	border-radius: 5px;
+	float: right;
+	margin: 1.5em 6em 0 0;
+}
+
+
+/* ---------- Testimonials ---------- */
+
+#testim-block{
+	position: relative;
+	/*background-color: #F84E73;*/
+	border-radius: 5px;
+	margin-top: .5em;
+	height: 480px;
+}
+#testim-title{
+	position: relative;
+	top: 0.5em;
+	width: 90%;
+	border: none;
+	border-radius: 5px;
+	z-index: 1;
+	margin: 0 0 0 1em;
+	padding-left: 1em;
+	background-color: #54958C;
+}
+#testim-title h1{
+	font-size: 5em;
+	z-index: 1;
+	color: white;
+	margin: 0;
+}
+#testim-img{
+	height: auto;
+	width: 320px;
+	border-radius: 5px;
+	float: left;
+	margin: 1.5em 1em 0 1em;
+}
+#testim-text{
+	width: 680px;
+	padding: 1em 1.5em 1em 1.5em;
+	position: absolute;
+	left: 350px;
+	font-family: 'Merriweather', serif;
+	text-transform: none;
+}
+
+
+/* ---------- Blog ---------- */
+
+#blog-block{
+	position: relative;
+	background-color: rgba(122, 159, 53, 0.5);
+	border-radius: 5px;
+	margin-top: .5em;
+	overflow: auto;
+	height: 480px;
+}
+#blog-title{
+	position: relative;
+	top: 0.5em;
+	width: 90%;
+	border: none;
+	border-radius: 5px;
+	z-index: 1;
+	margin: 0 0 0 1em;
+	padding-left: 1em;
+	background-color: #61749F;
+}
+#blog-title h1{
+	font-size: 5em;
+	z-index: 1;
+	color: black;
+	margin: 0;
+}
+#blog-text{
+	width: 680px;
+	z-index: 10;
+	padding: 1em 0 1em 1.5em;
+	float: left;
+	font-family: 'Merriweather', serif;
+	text-transform: none;
+}
+#blog-img{
+	height: auto;
+	width: 320px;
+	border-radius: 5px;
+	float: right;
+	margin: 1.5em 6em 0 0;
+}
+
+
+/* ---------- Footer ---------- */
+
+#quote{
+	text-align: center;
+	font-family: 'Marck Script', cursive;
+	text-transform: none;
+}
+#ryt{
+	height: auto;
+	width: 150px;
+	display: block;
+	margin: 40px auto;
+}
+#contact{
+	padding: 15px;
+}
+#contact p, #contact a{
+	font-family: 'Merriweather', serif;
+	text-transform: none;
+}
+#contact a{
+	text-decoration: none;
+	color: #32B9ED;
+}
+#copyright{
+	padding: 10px;
+	font-family: sans-serif;
+	text-transform: none;
+	opacity: 0.4;
+}
+
+
+
+
+
+
+
+
+
+
+

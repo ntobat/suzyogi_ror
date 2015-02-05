@@ -1,0 +1,23 @@
+<%= render 'shared_topnav' %>
+
+<div id="main">
+
+  <div id="title">
+    <h1>Blog</h1>
+  </div>
+
+  <div id="content">
+    <%= render :partial => @posts %><br><br>
+
+    <% @posts.each do |post| %>
+    	<%= link_to 'Edit', edit_post_path(post) %>&nbsp;&nbsp;|&nbsp;
+    	<%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %><br><br><br><br>
+
+    <%= link_to 'New Post', new_post_path %>
+  </div>
+
+
+</div>
+
+<%= render 'shared_footer' %>

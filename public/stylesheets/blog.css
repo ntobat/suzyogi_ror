@@ -1,0 +1,12 @@
+#title{
+	font-family: 'Julius Sans One', 'Open Sans', sans-serif;
+	font-size: 2em;
+	height: 140px;
+	background-color: #61749F;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 20px;
+}
+#title h1{
+	color: white;
+}

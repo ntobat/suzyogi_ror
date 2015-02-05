@@ -1,0 +1,173 @@
+/* ---------- Body ---------- */
+
+#overlay{
+	position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    top: 0px; 
+    left: 0px; 
+    opacity: 0.9;
+    filter: alpha(opacity = 90) !important;
+    display: none;
+    z-index: 10;
+    background: -webkit-linear-gradient(left top, #EB0080 , #0579D9); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #EB0080 , #0579D9); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #EB0080 , #0579D9); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #EB0080 , #0579D9); /* Standard syntax */
+}
+a{
+	text-decoration: none;
+}
+
+
+/* ---------- Header ---------- */
+
+header{
+	width: 420px;
+	height: 120px;
+	position: fixed;
+	top: 20px;
+	left: 0;
+	z-index: 10;
+	transition: all .3s ease 0s;
+	background: #b8efe5;
+}
+header:hover{
+	padding-left: 15px;
+}
+
+#name{
+	font-family: 'Julius Sans One', 'Open Sans', sans-serif;
+	font-size: 2.4em;
+	width: 300px;
+	margin: 38px 0 0 15px;
+	float: left;
+}
+#name a{
+	color: black;
+}
+
+#nav-button{
+	float: right;
+	margin: 38px 25px;
+}
+#icon{
+	height: auto;
+	width: 40px;
+}
+
+.slide-menu{
+	width: 240px;
+	height: 300px;
+	display: none;
+	position: fixed;
+	top: -320px;
+	left: 440px;
+	background-color: rgba(200, 200, 200, 0.75);
+	box-shadow: 0px 2px 2px #b8efe5;
+	z-index: 9999;
+	font-family: 'Julius Sans One', 'Open Sans', sans-serif;
+}
+.close-menu{
+	font-family: 'Julius Sans One', 'Open Sans', sans-serif;
+	padding: 5px;
+	box-shadow: 0px 2px 2px #b8efe5;
+	cursor: pointer;
+	font-size: 1em;
+}
+.slide-nav{
+	padding: 10px;
+}
+.slide-nav:hover{
+	box-shadow: 0px 2px 2px #b8efe5;
+}
+.slide-menu ul{
+	list-style: none;
+}
+.slide-menu a{
+	text-decoration: none;
+	color: black;
+}
+
+.slid-out{}
+
+
+/* ---------- Title ---------- */
+
+#title{
+	font-family: 'Julius Sans One', 'Open Sans', sans-serif;
+	font-size: 2em;
+	height: 140px;
+	background-color: #54958C;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 20px;
+}
+#title h1{
+	color: white;
+}
+#main h2{
+	font-family: 'Open Sans', sans-serif;
+	line-height: 150%;
+}
+
+
+/* ---------- Content ---------- */
+
+#main{
+	padding-top: 160px;
+}
+#content{
+	width: 80%;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 150%;
+	float: right;
+	margin-top: 40px;
+	margin-bottom: 100px;
+	padding-right: 20px;
+}
+.praise{
+	font-size: 1.2em;
+}
+.in-quote{
+	font-style: italic;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer{
+	clear: both;
+}
+#quote{
+	text-align: center;
+	font-family: 'Marck Script', cursive;
+	text-transform: none;
+}
+#ryt{
+	height: auto;
+	width: 150px;
+	display: block;
+	margin: 40px auto;
+}
+#contact{
+	padding: 15px;
+}
+#contact h2{
+	font-family: 'Julius Sans One', 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+#contact p, #contact a{
+	font-family: 'Merriweather', serif;
+	text-transform: none;
+}
+#contact a{
+	text-decoration: none;
+	color: #32B9ED;
+}
+#copyright{
+	padding: 10px;
+	font-family: sans-serif;
+	text-transform: none;
+	opacity: 0.4;
+}

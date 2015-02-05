@@ -1,0 +1,25 @@
+<body>
+
+<div id="overlay"></div>
+
+<header>
+
+  <div id="name"><a href="index.html">suzy gordon</a></div>
+
+  <div id="nav-button">
+    <a href="#0" class="primary-nav-trigger"><img src="http://i.imgur.com/y6IL8w5.png" id="icon" /></a>
+  </div>
+
+  <div class="slide-menu">
+    <ul>
+      <li><button class="close-menu">close &uarr;</button></li>
+      <li><h3><a href="index.html" class="slide-nav">home</a></h3></li>
+      <li><h3><a href="about.html" class="slide-nav">about</a></h3></li>
+      <li><h3><a href="praise.html" class="slide-nav">praise</a></h3></li>
+      <li><h3><a href="schedule.html" class="slide-nav">schedule</a></h3></li>
+      <li><h3><a href="gallery.html" class="slide-nav">gallery</a></h3></li>
+      <li><h3><%= link_to "blog", posts_path, class: "slide-nav" %></h3></li>
+    </ul>
+  </div>
+
+</header>
